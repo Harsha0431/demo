@@ -1,0 +1,216 @@
+.prototype-3{
+    grid-template-areas: 'head-nav head-nav head-nav' 
+                            'left-side body-container right-side' 
+                            'footer footer footer';
+    background-color: rgba(209, 208, 208, 0.564);
+    grid-template-columns: 1fr 5fr 1fr; 
+    display: grid;
+    overflow-wrap: break-word;
+    min-height: 100vh;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+.head-nav-container-3{
+    user-select: none;
+    width: 100%;
+    position: sticky;
+    top:0;
+    margin-top: -5vh;
+    grid-area: head-nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5.7vh;
+    max-height: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: auto;
+    overflow-wrap: break-word;
+    z-index: 500;
+    padding: 0.5rem 5px 0.8rem 5px;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    background-color: white;
+}
+
+.head-nav-container-3 .project-name{
+    position: relative;
+    left: 1vw;
+    z-index: 495;
+}
+
+.head-nav-container-3 .project-name span{
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 200%;
+}
+
+
+.head-nav-container-3 .head-nav-options{
+    display: flex;
+    position: relative;
+    right: 4vw;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:7vw;
+    z-index: 480;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    margin-left: 27px;
+}
+
+.head-nav-container-3 .head-nav-options span{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow: 1px 0px 0px #c5c5c5 , -1px 0px 0px #c5c5c5;
+}
+
+/* .head-nav-container-3 .head-nav-options span:hover{
+    animation: shake 200ms cubic-bezier(.36,.07,.19,.97) both;
+} */
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.left-aside{
+    margin-top: 2.5vh;
+    grid-area: left-side;
+    min-width: 10vw;
+    max-width: 15vw;
+    z-index: 400;
+    min-height: 100vh;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    bottom: 0;
+    height: 100%;
+}
+
+.right-aside{
+    display: flex;
+    justify-content: flex-start; /* Align the content to the right side */
+    flex-direction: column; /* Stack the counter on top */
+    align-items: center;
+    margin-top: 2.5vh;
+    grid-area: right-side;
+    min-width: 10vw;
+    max-width: 15vw;
+    /* height: 100%; */
+    z-index: 400;
+    /* min-height: 100vh; */
+    overflow: hidden;
+    overflow-wrap: break-word;
+    /* bottom: 0; */
+}
+
+.footer-3{
+    padding: 5px;
+    grid-area: footer;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    margin-top:0.2vh;
+    background-color: white;
+}
+
+.main-block-3{
+    margin-top: 5.3vh;
+    padding: 5px;
+    grid-area: body-container;
+    background-color: whitesmoke;
+    box-shadow: -2px -2px 15px #c5c5c5;
+    position: relative;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+    height: auto;
+    z-index: 300;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+LinK span:active {
+    text-decoration: none;
+}
+
+#linkToStyle{
+    text-decoration: none;
+}
+
+
+.active-state-style span{
+    background-color: rgb(50, 50, 132);
+    color: #ffffff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.active-state-style span:active{
+    transform: scale(0.9);
+}
+
+.count-files-container{
+    position: fixed;
+    margin-top: 15px;
+    user-select: none;
+}
+
+.right-aside .count-docs{
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 10rem;
+    position: sticky;
+    top: 10px;
+    z-index: 400;
+    border-bottom-right-radius: 10rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 1px #ffffff;
+    margin-left: -10px;
+}
+
+.right-aside .count-docs .counter-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.right-aside .count-docs .counter-card span:first-child{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.right-aside .count-docs .counter-card span:last-child{
+    font-size: 40px;
+    font-weight: 800;
+    color: red;
+}
+
+

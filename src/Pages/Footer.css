@@ -1,0 +1,33 @@
+.footer-container-3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-evenly;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.footer-info-container-3{
+    display: grid;
+}
+
+.footer-social-media-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social-media-container a{
+    cursor: pointer;
+}
+
+.footer-social-media-container a:hover{
+    transform: scale(1.15);
+}
+
+.footer-social-media-container a:active{
+    transform: scale(0.95);
+}
